@@ -24,4 +24,3 @@ export function createStore(rootReducer, initialState ={}) {
     },
   };
 }
-// extra task rewrite to class component;
