@@ -10,15 +10,7 @@ const prod = process.env.NODE_ENV === 'production';
 const isDev = !prod;
 const fileName = (ext) => isDev ? `bundle.${ext}`:`bundle.[chunk].${ext}`;
 const jsLoader = ()=>{
-  const loaders =[
-    {
-      loader: 'babel-loader',
-      options: {
-        presets: ['@babel/preset-env'],
-        plugins: ['@babel/plugin-proposal-class-properties'],
-      },
-    },
-  ];
+  const loaders =['babel-loader'];
   if (isDev) {
     loaders.push('eslint-loader');
   }

@@ -1,7 +1,7 @@
 import {Page} from '@core/Page';
 import {normalizeInitialState} from '@/redux/initialState';
 import {rootReducer} from '@/redux/rootReducer';
-import {createStore} from '@core/createStore';
+import {createStore} from '@core/store/createStore';
 import {debounce, storage} from '@core/utils';
 import Excel from '@/components/excel/Excel';
 import Toolbar from '@/components/toolbar/Toolbar';
